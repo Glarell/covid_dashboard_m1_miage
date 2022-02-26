@@ -1,0 +1,6 @@
+site_name: My Docs
+nav:
+- Accueil: index.md
+- Installation: install.md
+- Utilisation: use.md
+- Documentation technique: tech.md
