@@ -7,4 +7,8 @@ public class Reanimation extends Indicator{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public String toString() {
+		return "Reanimation : [date="+this.getDate()+", amount="+this.getAmount()+"]";
+	}
 }

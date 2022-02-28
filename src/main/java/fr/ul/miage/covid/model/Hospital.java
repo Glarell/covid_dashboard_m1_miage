@@ -8,4 +8,9 @@ public class Hospital extends Indicator{
 		super(date, amount, code);
 		// TODO Auto-generated constructor stub
 	}
+	
+	@Override
+	public String toString() {
+		return "Hospital : [date="+this.getDate()+", amount="+this.getAmount()+"]";
+	}
 }

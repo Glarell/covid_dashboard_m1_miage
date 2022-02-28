@@ -15,8 +15,7 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 	
-	public final static Loader loader_drh = new Loader("chiffres-cles.json",0);
-	public final static Loader loader_v = new Loader("vacsi-v-dep-2022-02-18-19h09.csv",1);
+	public final static Loader loader = new Loader("france.csv");
 
 	@Override
 	public void start(Stage primaryStage) {

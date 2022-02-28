@@ -21,6 +21,6 @@ public class DeathController extends PanelController<Deaths> {
 	
 	@Override
 	public void init() {
-		this.datas=App.loader_drh.getDeaths();
+		this.datas=App.loader.getDeaths();
 	}
 }

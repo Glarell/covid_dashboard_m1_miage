@@ -17,6 +17,6 @@ public class VaccinationController extends PanelController{
 
 	@Override
 	public void init() {
-		this.datas=App.loader_v.getVaccinations();
+		this.datas=App.loader.getVaccinations();
 	}
 }

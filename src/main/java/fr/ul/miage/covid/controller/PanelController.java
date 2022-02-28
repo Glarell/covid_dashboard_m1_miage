@@ -18,6 +18,7 @@ import javafx.scene.chart.XYChart.Series;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.layout.AnchorPane;
 
 public class PanelController<T> {
 
@@ -31,6 +32,7 @@ public class PanelController<T> {
 	@FXML private Button apply_filters;
 	@FXML private Button btn_open;
 	@FXML private Button btn_close;
+	@FXML private AnchorPane anchor_filters;
 	ZoneId defaultZoneId = ZoneId.systemDefault();
 
 	protected T datas;
@@ -51,7 +53,7 @@ public class PanelController<T> {
 		xAxis.setLabel("Date");
 		yAxis.setLabel("Amount");
 		initDepartementSelector();
-		
+		anchor_filters.setPrefWidth(0);
 	}
 	 
 	 public void onDepChoosen() throws ParseException {
@@ -90,6 +92,7 @@ public class PanelController<T> {
 			datePickerEnd.setVisible(true);
 			delete_filters.setVisible(true);
 			apply_filters.setVisible(true);
+			anchor_filters.setPrefWidth(200);
 		}
 		
 		public void close_filters() {
@@ -100,6 +103,7 @@ public class PanelController<T> {
 			datePickerEnd.setVisible(false);
 			delete_filters.setVisible(false);
 			apply_filters.setVisible(false);
+			anchor_filters.setPrefWidth(0);
 		}
 		
 		public void apply_filters() throws ParseException {

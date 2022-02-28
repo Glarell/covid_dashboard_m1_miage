@@ -1,6 +1,7 @@
 package fr.ul.miage.covid.controller;
 
 import java.io.IOException;
+
 import java.text.ParseException;
 import java.time.ZoneId;
 import java.util.Date;
@@ -81,10 +82,10 @@ public class MainController {
 			this.gridpane.add(reanimation_panel,0,1);
 			this.gridpane.add(vaccination_panel,1,1);
 			initDepartementSelector();
-			borderpane_dea.setCenter(new TableRecap(App.loader_drh.getDeaths()));
-			borderpane_hos.setCenter(new TableRecap(App.loader_drh.getHospitals()));
-			borderpane_rea.setCenter(new TableRecap(App.loader_drh.getReanimations()));
-			borderpane_vac.setCenter(new TableRecap(App.loader_v.getVaccinations()));
+			borderpane_dea.setCenter(new TableRecap(App.loader.getDeaths()));
+			borderpane_hos.setCenter(new TableRecap(App.loader.getHospitals()));
+			borderpane_rea.setCenter(new TableRecap(App.loader.getReanimations()));
+			borderpane_vac.setCenter(new TableRecap(App.loader.getVaccinations()));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

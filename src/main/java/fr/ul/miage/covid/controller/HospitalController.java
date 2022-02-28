@@ -22,6 +22,6 @@ public class HospitalController extends PanelController<Hospitals>{
 
 	@Override
 	public void init() {
-		this.datas=App.loader_drh.getHospitals();
+		this.datas=App.loader.getHospitals();
 	}
 }

@@ -16,6 +16,6 @@ public class ReanimationController extends PanelController{
 
 	@Override
 	public void init() {
-		this.datas=App.loader_drh.getReanimations();
+		this.datas=App.loader.getReanimations();
 	}
 }

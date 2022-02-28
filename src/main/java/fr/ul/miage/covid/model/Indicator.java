@@ -54,7 +54,7 @@ public class Indicator {
 
 	@Override
 	public String toString() {
-		return "Death [date=" + date + ", amount=" + amount + "]";
+		return "Indicator [date=" + date + ", amount=" + amount + "]";
 	}
 	
 }

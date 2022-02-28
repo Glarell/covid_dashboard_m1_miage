@@ -6,5 +6,9 @@ public class Death extends Indicator{
 		super(date, amount, code);
 		// TODO Auto-generated constructor stub
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Death : [date="+this.getDate()+", amount="+this.getAmount()+"]";
+	}
 }
